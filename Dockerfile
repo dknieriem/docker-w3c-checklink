@@ -8,6 +8,9 @@ RUN apt-get update && apt-get install -y \
       make \
       build-essential \
       libssl-dev \
+      curl \
+      libnet-ssleay-perl \
+      libcrypt-ssleay-perl \
   && rm -rf /var/lib/apt/lists/*
 
 ENV CHECKLINK_VERSION 4_81
