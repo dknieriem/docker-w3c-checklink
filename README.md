@@ -34,3 +34,9 @@ Or write into HTML report:
 ```
 $ docker run -it --rm checklink -H report.html
 ```
+
+ex. per [`w3c/link-checker`](https://github.com/w3c/link-checker) README.md:
+
+```
+$ docker run -it --rm -v "$PWD":/home/checklink link-checker checklink -H https://foo.bar > report.html # Write to HTML file
+```
